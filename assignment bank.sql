@@ -6,9 +6,9 @@ provided schema.
 5. Create appropriate Primary Key and Foreign Key constraints for referential integrity.
 6. Write SQL scripts to create the mentioned tables with appropriate data types, constraints, 
 and relationships. 
-• Customers
-• Accounts
-• Transaction*/
+â€¢ Customers
+â€¢ Accounts
+â€¢ Transaction*/
 --creating a database 
 create database HMBank
 --navigating to the database
@@ -40,18 +40,11 @@ foreign key (account_id) references Accounts(account_id)
 )
 
 
-
-alter table accounts
-drop constraint FK__Accounts__custom__3A81B327
-alter table accounts
-add constraint FK_Accounts_customerid
-foreign key (customer_id) references customers(customer_id) on delete cascade
-
 --Tasks 2: Select, Where, Between, AND, LIKE
 /*1. Insert at least 10 sample records into each of the following tables. 
-• Customers
-• Accounts
-• Transactions*/
+â€¢ Customers
+â€¢ Accounts
+â€¢ Transactions*/
 
 insert into Customers values(1,'kathir','kumar','2000-09-22','kathir@gmail.com','123456','123 good street,bangalore'),
 (2,'john','peter','2002-08-22','john@gmail.com','222333','456 oak street,bangalore'),
